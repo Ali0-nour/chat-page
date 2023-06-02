@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --content-right: 27%;
+
+}
+
+body {
+    display: flex;
+
+}
+
+
+/* content right */
+.content-right {
+    width: var(--content-right);
+    height: 900px;
+    display: inline-flex;
+    flex-direction: column;
+    border-inline: 1px solid rgb(190, 190, 190);
+
+}
+
+.content-right input[type="search"] {
+    width: 230px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    color: black;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(175, 172, 172);
+    font-size: 14px;
+}
+
+.content-right input[type="button"] {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgb(87, 95, 218);
+    border: 0px solid rgb(175, 172, 172);
+}
+
+.content-right .input-sh-bu {
+    display: flex;
+    width: 100%;
+    height: 135px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.figer-me {
+    width: 90%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.figer {
+    width: 70%;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid rgb(165, 165, 165);
+    justify-content: space-evenly;
+    margin: 1px 0;
+}
+
+.figer p:first-of-type {
+    font-size: 15px;
+    color: rgb(156, 155, 155);
+}
+
+.figer p:last-of-type {
+    align-self: flex-start;
+
+}
+
+
+.figer-me img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/*  content  center */
+
+.content-center {
+    width: calc(100% - var(--content-right));
+    display: inline-flex;
+    flex-direction: column;
+    flex-shrink: 21;
+    flex-grow: 32;
+
+}
+
+/* content top */
+
+.content-top {
+    height: 60px;
+    width: 87%;
+    background-color: rgb(235, 234, 234);
+    display: inline-flex;
+    align-items: center;
+    padding: 0 40px;
+    flex-shrink: 34;
+
+}
+
+.content-top p {
+    color: rgb(117, 116, 116);
+    font-size: 17px;
+}
+
+.content-chat span:first-of-type {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 40px;
+    color: rgb(168, 168, 168);
+}
+
+.content-chat span:first-of-type::before,
+.content-chat span:first-of-type::after {
+    content: "------------------------------------------";
+    letter-spacing: -1.6px;
+    margin: 0 21px;
+    color: rgb(202, 200, 200);
+}
+
+.content-chat .left,
+.right {
+    color: rgb(255, 255, 255);
+    background-color: rgba(19, 19, 221, 0.801);
+    width: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    margin: 10px 40px;
+    text-align: center;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+
+}
+
+.content-chat p:nth-child(2)::before {
+    content: "";
+    background-color: rgba(19, 19, 221, 0.801);
+    width: 21px;
+    height: 13px;
+
+}
+
+.content-chat .chqt-ry {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 10px 0px;
+
+}
+
+.chqt-ry p {
+    background-color: rgba(218, 218, 218, 0.705);
+    color: initial;
+
+}
+
+input[type=text] {
+    width: 90%;
+    height: 40px;
+    background-color: rgb(226, 226, 226);
+    border: none;
+    border-radius: 2% 2%;
+    -webkit-border-radius: 2% 2%;
+    -moz-border-radius: 2% 2%;
+    -ms-border-radius: 2% 2%;
+    -o-border-radius: 2% 2%;
+    font-size: 16px;
+}
+
+.txt {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    align-items: end;
+}
+
+.txt img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    right: 40px;
+    bottom: 95px;
+}
